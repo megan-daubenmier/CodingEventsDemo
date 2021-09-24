@@ -6,10 +6,11 @@ namespace CodingEventsDemo.Models
     public class Event
     {
         public string Name { get; set; }
-
         public string Description { get; set; }
-
         public string ContactEmail { get; set; }
+        public string Location { get; set; }
+        public int NumAttendees { get; set; }
+        public bool IsRegistrationRequired { get; set; }
 
         public int Id { get; }
         static private int nextId = 1;
